@@ -18,6 +18,7 @@ class ViewController: UIViewController, G8TesseractDelegate{
     }
     
     @IBAction func SecoundButton(_ sender: Any) {
+
         handleChangeImage()
     }
     
@@ -37,7 +38,7 @@ class ViewController: UIViewController, G8TesseractDelegate{
                 
 //                print("nanimonai")
             }else{
-//                OCRLabel.text = tesseract?.recognizedText as? String
+//                OCRLabel.text = tesseract?.recognizedText as! String/
                 print(tesseract?.recognizedText as! String)
             }
         }
